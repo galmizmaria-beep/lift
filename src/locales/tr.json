@@ -22,5 +22,10 @@
   "result": "Sonuç",
   "next": "Devam et",
   "enter": "Asansöre giriliyor…",
-  "goal": "Hedef"
+  "goal": "Hedef",
+  "chooseLift": "Asansörünü seç",
+  "lift": "Asansör",
+  "enterLift": "Asansöre gir",
+  "back": "Geri",
+  "downOne": "Bir kat aşağı"
 }

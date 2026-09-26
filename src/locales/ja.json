@@ -22,5 +22,10 @@
   "result": "結果",
   "next": "続ける",
   "enter": "エレベーターに入ります…",
-  "goal": "目標"
+  "goal": "目標",
+  "chooseLift": "エレベーターを選ぶ",
+  "lift": "エレベーター",
+  "enterLift": "乗る",
+  "back": "戻る",
+  "downOne": "一階下へ"
 }

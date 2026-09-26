@@ -22,5 +22,10 @@
   "result": "Result",
   "next": "Continue",
   "enter": "Entering the elevator…",
-  "goal": "Goal"
+  "goal": "Goal",
+  "chooseLift": "Choose your elevator",
+  "lift": "Elevator",
+  "enterLift": "Enter the elevator",
+  "back": "Back",
+  "downOne": "One floor down"
 }

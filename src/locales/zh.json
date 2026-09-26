@@ -22,5 +22,10 @@
   "result": "结果",
   "next": "继续",
   "enter": "正在进入电梯…",
-  "goal": "目标"
+  "goal": "目标",
+  "chooseLift": "选择你的电梯",
+  "lift": "电梯",
+  "enterLift": "进入电梯",
+  "back": "返回",
+  "downOne": "下降一层"
 }

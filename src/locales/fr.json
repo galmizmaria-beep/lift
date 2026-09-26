@@ -22,5 +22,10 @@
   "result": "Résultat",
   "next": "Continuer",
   "enter": "Entrée dans l’ascenseur…",
-  "goal": "Objectif"
+  "goal": "Objectif",
+  "chooseLift": "Choisis ton ascenseur",
+  "lift": "Ascenseur",
+  "enterLift": "Entrer",
+  "back": "Retour",
+  "downOne": "Un étage plus bas"
 }

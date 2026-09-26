@@ -22,5 +22,10 @@
   "result": "Wynik",
   "next": "Kontynuuj",
   "enter": "Wchodzenie do windy…",
-  "goal": "Cel"
+  "goal": "Cel",
+  "chooseLift": "Wybierz windę",
+  "lift": "Winda",
+  "enterLift": "Wejdź",
+  "back": "Wstecz",
+  "downOne": "Piętro niżej"
 }
