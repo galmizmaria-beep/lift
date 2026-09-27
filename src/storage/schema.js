@@ -12,5 +12,9 @@ export function migrate(raw){walk(raw);if(!raw||raw.version!==1)throw Error('Э�
  for(const n of [p.rules.lives,p.rules.timer.seconds,p.rules.timer.warning,p.floors.start,p.floors.columns,p.floors.target])if(!Number.isInteger(n))throw Error('Ожидается целое число');for(const n of Object.values(p.rules.bonus).filter(x=>typeof x==='number'))if(!Number.isFinite(n)||n<0||n>3600)throw Error('Некорректное правило бонусов');if(new Set(p.assets.map(a=>a.id)).size!==p.assets.length)throw Error('Повторяющиеся идентификаторы медиа');
  if(![1200,1600,1920].includes(p.project.width)||p.project.height!==p.project.width*9/16)throw Error('Некорректное разрешение');
  if(!['skyline','aurora','orbit'].includes(p.elevator.design))p.elevator.design='skyline';for(const item of Object.values(p.layout)){if(!Number.isFinite(item.x)||item.x<0||item.x>100||!Number.isFinite(item.y)||item.y<0||item.y>100||!Number.isFinite(item.scale)||item.scale<.3||item.scale>2)throw Error('Некорректное расположение объекта');}
+ p.elevator.studentChoice=false;
+ const f=p.sceneFrame;if(!['none','solid','dashed','dotted','double'].includes(f.style)||!/^#[0-9a-f]{6}$/i.test(f.color)||!/^#[0-9a-f]{6}$/i.test(f.glowColor))throw Error('Некорректная рамка сцены');
+ for(const [k,max] of [['width',20],['glow',60],['radius',60]])if(!Number.isFinite(f[k])||f[k]<0||f[k]>max)throw Error('Некорректная рамка сцены');
+ for(const z of Object.values(p.layers))if(!Number.isInteger(z)||z<1||z>8)throw Error('Некорректный слой');
  return p;
 }
