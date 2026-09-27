@@ -11,3 +11,7 @@
 | Playwright | 1.56.1 | Только тесты разработки | Apache-2.0, https://github.com/microsoft/playwright |
 
 Приложение использует системные шрифты. Робот, лифт и растительный декор построены CSS; сторонние изображения не используются.
+
+## KaTeX 0.16.22
+
+Mathematical notation: https://katex.org/ (MIT). Bundled locally in `public/vendor/katex.min.js`; license in `public/vendor/katex-LICENSE.txt`. The UMD global target is adapted to `globalThis` so the same bundle loads in browser ES modules and offline HTML. MathML output avoids external fonts and network requests.

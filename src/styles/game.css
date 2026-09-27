@@ -25,3 +25,13 @@
 .scene-caption{bottom:3%;line-height:1.5;padding:.3em .7em;max-height:18%;overflow:auto;overflow-wrap:anywhere;background:#ffffffd9;border-radius:8px;width:fit-content;max-width:90%;margin:auto}
 .scene-caption:empty{display:none}
 .floor-console small{flex-wrap:wrap;line-height:1.5;padding-bottom:.4em}
+.game [data-action=begin]{background:var(--begin-background);color:var(--begin-color);box-shadow:0 0 var(--begin-glow) var(--begin-glowColor)}
+.game .enter-control{background:var(--enter-background);color:var(--enter-color);box-shadow:0 0 var(--enter-glow) var(--enter-glowColor)}
+.game .start-control .start-task{background:var(--ready-background);color:var(--ready-color);box-shadow:0 0 var(--ready-glow) var(--ready-glowColor)}
+.game [data-action=check]{background:var(--check-background);color:var(--check-color);box-shadow:0 0 var(--check-glow) var(--check-glowColor)}
+.game .lift-sign{background:var(--display-background,#172832);color:var(--display-color,#e1f7fc)}
+.display-number{white-space:nowrap;text-shadow:0 0 var(--display-glow,12px) var(--display-glowColor,#79dcb6)}
+.game[data-digits=neon] .display-number{font-family:monospace;font-weight:700;letter-spacing:.12em;text-shadow:0 0 2px currentColor,0 0 var(--display-glow) var(--display-glowColor)}
+.segment-digits{display:flex;gap:.25em;height:1.25em;filter:drop-shadow(0 0 var(--display-glow) var(--display-glowColor))}.segment-digits svg{height:100%;width:auto;fill:currentColor}
+.game .screen-card h1{font-family:var(--font)}
+.game [data-math]{overflow-wrap:anywhere;min-width:0}.game math{font-size:1.1em;white-space:normal}.game math[display=block]{display:block;overflow-x:auto;max-width:100%;padding:.3em 0}.game .math-error{color:#a32a24;text-decoration:underline dotted}.game .goal-badge{white-space:normal;line-height:1.4}.game .task-card{overflow-x:auto}
