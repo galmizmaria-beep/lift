@@ -1,7 +1,8 @@
 import {projectBlob,readProject} from '../storage/storage.js';
 import {validate,clone} from '../game/model.js';
 import {embedCode} from './export.js';
-const DEFAULT_PLAYER='https://galmizmaria-beep.github.io/lift/play.html';
+import {PLAYER_VERSION} from './player-version.js';
+const DEFAULT_PLAYER=`https://galmizmaria-beep.github.io/lift/players/${PLAYER_VERSION}/play.html`;
 export async function shareCode(project,{compact=true,playerURL=DEFAULT_PLAYER}={}){
  const errors=validate(project);if(errors.length)throw Error(errors.join('\n'));
  const p=clone(project);p.project.author='';p.project.url='';p.project.autosave=false;
