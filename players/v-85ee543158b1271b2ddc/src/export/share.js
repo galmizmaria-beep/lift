@@ -1,0 +1,2 @@
+import {readProject} from '../storage/storage.js';
+export async function unpackShared(hash){const value=new URLSearchParams(hash.replace(/^#/, '')).get('project');if(!value)throw Error('В ссылке нет игры. Скопируйте код из редактора.');if(value.length>140*1024*1024||!/^[\w-]+$/.test(value))throw Error('Недопустимые данные игры');const binary=atob(value.replace(/-/g,'+').replace(/_/g,'/'));return readProject(new Blob([Uint8Array.from(binary,c=>c.charCodeAt(0))]));}
